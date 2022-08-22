@@ -3,12 +3,29 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
 
 class HornedBeast extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            numOfPets : 0,
+        }
+    }
+
+
+    incrementNumOfPets = () => {
+        this.setState({
+                numOfPets : this.state.numOfPets +1
+            })
+    }
+
+
 
     render() {
         return (
@@ -21,11 +38,11 @@ class HornedBeast extends React.Component {
            <p>{this.props.description}</p> */}
 
            <Card style={{ width: '18rem' }}>
-           <Card.Img variant="top" src={this.props.img} />
+           <Card.Img variant="top" src={this.props.img} onClick= {this.incrementNumOfPets} />
            <Card.Body>
            <Card.Title>{this.props.title}</Card.Title>
            <Card.Text>
-          number of pets: 0
+          number of pets: {this.state.numOfPets}
           </Card.Text>
           {/* <Button variant="primary">Go somewhere</Button> */}
           </Card.Body>
