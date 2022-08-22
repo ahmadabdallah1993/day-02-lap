@@ -73,12 +73,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-### Number and name of feature: 
+### Number and name of feature: prop, set, render, react, using json file.
 
-### Estimate of time needed to complete: 
+### Estimate of time needed to complete: 3 hours
 
-### Start time: _____
+### Start time: 5:00pm
 
-### Finish time: _____
+### Finish time: 8pm
 
-### Actual time needed to complete: _____
+### Actual time needed to complete: 3 hr

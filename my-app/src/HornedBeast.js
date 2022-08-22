@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './style.css';
 
 
 
@@ -31,7 +32,7 @@ class HornedBeast extends React.Component {
         return (
 
 
-            <div>
+            <div >
            {/* <h2>{this.props.title}</h2>
            <p>{this.props.id}</p>
            <img src={this.props.img} alt='img'></img> 
