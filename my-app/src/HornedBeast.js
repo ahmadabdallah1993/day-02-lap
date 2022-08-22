@@ -37,7 +37,7 @@ class HornedBeast extends React.Component {
            <img src={this.props.img} alt='img'></img> 
            <p>{this.props.description}</p> */}
 
-           <Card style={{ width: '18rem' }}>
+           <Card style={{ width: '25rem'}}>
            <Card.Img variant="top" src={this.props.img} onClick= {this.incrementNumOfPets} />
            <Card.Body>
            <Card.Title>{this.props.title}</Card.Title>
