@@ -73,12 +73,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-### Number and name of feature: prop, set, render, react, using json file.
-
-### Estimate of time needed to complete: 3 hours
-
+# 1: Display images feature: it took one hours.
+## Estimate of time needed to complete: 1 hours
 ### Start time: 5:00pm
+### Finish time: 6pm
+### Actual time needed to complete: 1hr
 
-### Finish time: 8pm
 
-### Actual time needed to complete: 3 hr
+
+# 2: Allow users to vote for their favorite beast 2 hours.
+## Estimate of time needed to complete: 2 hours
+### Start time: 6:00pm
+### Finish time: 7pm
+### Actual time needed to complete: 2hr
+
+
+
+# Feature 3: Bootstrap
+## Estimate of time needed to complete: 1 hours
+### Start time: 8:00pm
+### Finish time: 9pm
+### Actual time needed to complete: 1hr

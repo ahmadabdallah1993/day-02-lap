@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './header';
 import Main from './main';
 import Fotter from './Fotter';
+// import './style.css';
 
 
 class App extends React.Component {

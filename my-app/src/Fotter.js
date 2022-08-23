@@ -6,8 +6,9 @@ class Fotter extends React.Component {
 
     render() {
         return(
-            <div>
-          <p>Ahmad yaghi</p>
+            
+            <div class="p-5 text-center bg-light">
+            <p class="mb-3">Done by: Ahmad yaghi    Email: ahmad.abdallah1993@outlook.com</p>
             </div>
         )
     }
