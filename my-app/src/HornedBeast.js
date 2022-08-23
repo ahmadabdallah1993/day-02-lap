@@ -18,6 +18,7 @@ class HornedBeast extends React.Component {
 
         this.state = {
             numOfPets : 0,
+            numOfTunas : 0
         }
     }
 
@@ -26,6 +27,16 @@ class HornedBeast extends React.Component {
         this.setState({
                 numOfPets : this.state.numOfPets +1
             })
+    }
+
+    iNeedTuna = () => {
+        // alert("hi from iNeedTuna")
+
+        this.setState({
+            numOfTunas : this.state.numOfTunas +1
+        })
+
+        this.props.decrementTotal();
     }
 
 
@@ -48,9 +59,12 @@ class HornedBeast extends React.Component {
            <Card.Body>
            <Card.Title>{this.props.title}</Card.Title>
            <Card.Text>
-          number of pets: {this.state.numOfPets}
+          number of pets 🐱: {this.state.numOfPets}
           </Card.Text>
-          {/* <Button variant="primary">Go somewhere</Button> */}
+          <Card.Text>
+          num of tunas 🐟: {this.state.numOfTunas}
+          </Card.Text>
+          <button variant="primary" onClick={this.iNeedTuna}>I Need Tuna:</button>
           </Card.Body>
            </Card>
            </Col>
