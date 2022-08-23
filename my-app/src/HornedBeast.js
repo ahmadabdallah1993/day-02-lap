@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 // import './style.css';
 import Col from 'react-bootstrap/Col';
+import SelectedBeast from "./SelectedBeast";
 
 
 
@@ -18,7 +19,8 @@ class HornedBeast extends React.Component {
 
         this.state = {
             numOfPets : 0,
-            numOfTunas : 0
+            numOfTunas : 0,
+            numOfClick : 0
         }
     }
 
@@ -50,6 +52,16 @@ class HornedBeast extends React.Component {
            <p>{this.props.id}</p>
            <img src={this.props.img} alt='img'></img> 
            <p>{this.props.description}</p> */}
+
+           <h1>total click = {this.state.numOfClick} </h1>
+
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">modal</button>
+
+           <SelectedBeast/>
+         {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+          for full Description 
+         </button> */}
+         
           
         <Col >
           
