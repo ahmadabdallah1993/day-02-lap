@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './style.css';
+import Col from 'react-bootstrap/Col';
+
 
 
 
@@ -37,6 +39,9 @@ class HornedBeast extends React.Component {
            <p>{this.props.id}</p>
            <img src={this.props.img} alt='img'></img> 
            <p>{this.props.description}</p> */}
+          
+        <Col>
+          <Card></Card>
 
            <Card style={{ width: '25rem'}}>
            <Card.Img variant="top" src={this.props.img} onClick= {this.incrementNumOfPets} />
@@ -48,6 +53,8 @@ class HornedBeast extends React.Component {
           {/* <Button variant="primary">Go somewhere</Button> */}
           </Card.Body>
            </Card>
+           </Col>
+        
         </div>
         )
 
