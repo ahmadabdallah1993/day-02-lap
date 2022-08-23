@@ -93,4 +93,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## Estimate of time needed to complete: 1 hours
 ### Start time: 8:00pm
 ### Finish time: 9pm
-### Actual time needed to complete: 1hr
+### Actual time needed to complete: 1nhr
