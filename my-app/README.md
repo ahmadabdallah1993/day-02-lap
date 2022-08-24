@@ -104,3 +104,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## Start time: 4
 ## Finish time: 9
 ## Actual time needed to complete: 5 hours
+
+
+## Feature 1. Filter by Numbers of Horns: to allow the user to choose the number of horns then the animal with the choose number of horn will appear.
+
+# when the user choose the number of horns the animal with the same number of horns will appears. it is a filtering for the number the user choose.
