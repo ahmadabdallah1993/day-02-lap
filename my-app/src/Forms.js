@@ -23,7 +23,7 @@ class Forms extends React.Component {
     console.log(e)
   
   this.setState({
-    numHorn: Number(e.target.numOfHorns.value),
+    numHorn: e.target.numOfHorns.value
     
   })
   this.props.sendIt(this.numHorn);

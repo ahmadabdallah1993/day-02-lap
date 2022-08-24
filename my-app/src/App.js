@@ -40,9 +40,11 @@ fatherAppCloseShow = () => {
   })
 }
 
-calculateHorns = (num) => {
+calculateHorns = (num2) => {
 
-  let cal = this.d.filter( (item) => {
+let num = Number(num2);
+
+  let cal = this.state.d.filter( (item) => {
     return item.horns === num})
 
   this.setState({
