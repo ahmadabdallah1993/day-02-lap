@@ -9,20 +9,17 @@ class SelectedBeast extends React.Component {
     return(
       
       
-      <Modal show={this.props.sendFatherApp} onHide={this.props.fatherCloseShow}>
+      <Modal show={this.props.showModel} onHide={this.props.fatherCloseShow}>
       <Modal.Header closeButton>
-        <Modal.Title>{this.props.selBeast.title}</Modal.Title>
+        <Modal.Title>{this.props.sb.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={this.props.selBeast.image_url} alt={this.props.selBeast.title}/>
-        <p>{this.props.selBeast.title}</p>
+        <img src={this.props.sb.image_url} alt={this.props.sb.title}/>
+        <p>{this.props.sb.title}</p>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={this.props.fatherCloseShow}>
           Close
-        </Button>
-        <Button variant="primary" onClick={this.props.fatherCloseShow}>
-          Save Changes
         </Button>
       </Modal.Footer>
     </Modal>

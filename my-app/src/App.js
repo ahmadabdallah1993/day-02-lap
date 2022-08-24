@@ -24,11 +24,10 @@ constructor(props){
 
 fatherApp = (title) => {
 
-  const SelectedBeast = Data.find(beast => beast.title === title)
+  const SBeast = Data.find(beast => beast.title === title)
   this.setState({
-    
     show: true,
-    selBeast:SelectedBeast
+    selBeast: SBeast
   })
 }
 
@@ -49,7 +48,7 @@ fatherAppCloseShow = () => {
         
         
         <Fotter />
-        <SelectedBeast sendFatherApp={this.state.show} fatherCloseShow={this.fatherAppCloseShow} selBeast={this.state.selBeast}/>
+        <SelectedBeast showModel={this.state.show} fatherCloseShow={this.fatherAppCloseShow} sb={this.state.selBeast}/>
       
       </div>
 
