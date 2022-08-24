@@ -53,16 +53,20 @@ class HornedBeast extends React.Component {
            <img src={this.props.img} alt='img'></img> 
            <p>{this.props.description}</p> */}
 
-           <h1>total click = {this.state.numOfClick} </h1>
+           {/* <h1>total click = {this.state.numOfClick} </h1> */}
 
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">modal</button>
+           {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">modal</button> */}
 
-           <SelectedBeast/>
+
+           {/* <SelectedBeast/> */}
          {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
           for full Description 
          </button> */}
          
-          
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+<SelectedBeast />
         <Col >
           
 
