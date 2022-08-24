@@ -20,7 +20,7 @@ constructor(props){
   this.state = {
     selBeast:{},
     show:false,
-    d: {Data}
+    d: Data
   }
 }
 
@@ -45,8 +45,6 @@ calculateHorns = (num) => {
   let cal = this.d.filter( (item) => {
     return item.horns === num})
 
-  // const cal = Data.filter( (item) => num === item.horns)
-
   this.setState({
     d: cal
   })
@@ -60,8 +58,8 @@ calculateHorns = (num) => {
 
         <Header />
         <Forms sendIt={this.calculateHorns}/>
-        {/* {data} */}
-        <Main sendingData={Data} sendFatherApp = {this.fatherApp}/>
+        {/* {data}this.state.d */}
+        <Main sendingData={this.state.d} sendFatherApp = {this.fatherApp}/>
         <SelectedBeast showModel={this.state.show} fatherCloseShow={this.fatherAppCloseShow} sb={this.state.selBeast}/>
         
         <Fotter />
