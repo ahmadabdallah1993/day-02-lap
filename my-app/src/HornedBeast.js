@@ -59,15 +59,18 @@ class HornedBeast extends React.Component {
            <Card.Body>
            <Card.Title>{this.props.title}</Card.Title>
            <Card.Text>
-          number of pets 🐱: {this.state.numOfPets}
+          number of pets 🌟: {this.state.numOfPets}
           </Card.Text>
           <Card.Text>
-          num of tunas 🐟: {this.state.numOfTunas}
+          {/* num of tunas 🐟: {this.state.numOfTunas} */}
           </Card.Text>
-          <button variant="primary" onClick={this.iNeedTuna}>I Need Tuna:</button>
+          <Card.Text>
+          Number of Horns 🦄: {this.props.horns}
+          </Card.Text>
+          {/* <button variant="primary" onClick={this.iNeedTuna}>I Need Tuna:</button> */}
           {/* <br></br> */}
           <Button variant="primary" onClick={() => {this.props.sendFatherApp(this.props.title)}}>
-        Launch static backdrop modal
+        For More Details
       </Button>
           
           </Card.Body>
