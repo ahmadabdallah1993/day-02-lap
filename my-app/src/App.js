@@ -52,7 +52,7 @@ let e = Data;
   let cal = e.filter( (item) => {
     return item.horns === num})
 
-    // console.log(cal)
+    console.log(cal)
 
   this.setState({
     d: cal

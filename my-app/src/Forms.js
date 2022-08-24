@@ -33,16 +33,16 @@ class Forms extends React.Component {
   // onChange={this.handleChange}
     render() {
         return(
-            <Form onSubmit={this.handleSubmit} >
+            <Form onSubmit={this.handleSubmit}>
       
         <Form.Group className="mb-3">
           <Form.Label htmlFor="numOfHorns"><h2>Select Numbers Of Horns:</h2></Form.Label>
           <Form.Select id="numOfHorns">
             <option value='1'>One Horns</option>
-            <option value= '2'>two Horns</option>
-            <option value= '3'>three Horns</option>
-            <option value= '4'>four Horns</option>
-            <option value= '5'>five or more Horns</option>
+            <option value='2'>two Horns</option>
+            <option value='3'>three Horns</option>
+            <option value='4'>four Horns</option>
+            <option value='5'>five Horns</option>
           </Form.Select>
         </Form.Group>
         
