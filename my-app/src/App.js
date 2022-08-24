@@ -43,9 +43,16 @@ fatherAppCloseShow = () => {
 calculateHorns = (num2) => {
 
 let num = Number(num2);
+let e = Data;
 
-  let cal = this.state.d.filter( (item) => {
+// if(num === 5){
+//   num = Data.horns;
+// }
+
+  let cal = e.filter( (item) => {
     return item.horns === num})
+
+    // console.log(cal)
 
   this.setState({
     d: cal

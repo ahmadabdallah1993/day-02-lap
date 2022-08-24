@@ -1,6 +1,6 @@
 import React from 'react';
 import {Form, Button} from 'react-bootstrap';
-import App from './App';
+
 
 
 
@@ -26,7 +26,7 @@ class Forms extends React.Component {
     numHorn: e.target.numOfHorns.value
     
   })
-  this.props.sendIt(this.numHorn);
+  this.props.sendIt(this.state.numHorn);
     
   }
 
@@ -40,9 +40,9 @@ class Forms extends React.Component {
           <Form.Select id="numOfHorns">
             <option value='1'>One Horns</option>
             <option value= '2'>two Horns</option>
-            <option value='3'>three Horns</option>
+            <option value= '3'>three Horns</option>
             <option value= '4'>four Horns</option>
-            <option value='5'>five or more Horns</option>
+            <option value= '5'>five or more Horns</option>
           </Form.Select>
         </Form.Group>
         
