@@ -7,6 +7,7 @@ import Data from './Data.json';
 
 
 import SelectedBeast from './SelectedBeast';
+import Forms from './Forms';
 
 
 
@@ -18,7 +19,8 @@ constructor(props){
 
   this.state = {
     selBeast:{},
-    show:false
+    show:false,
+    d: {Data}
   }
 }
 
@@ -27,13 +29,26 @@ fatherApp = (title) => {
   const SBeast = Data.find(beast => beast.title === title)
   this.setState({
     show: true,
-    selBeast: SBeast
+    selBeast: SBeast,
+    
   })
 }
 
 fatherAppCloseShow = () => {
   this.setState ({
     show: false
+  })
+}
+
+calculateHorns = (num) => {
+
+  let cal = this.d.filter( (item) => {
+    return item.horns === num})
+
+  // const cal = Data.filter( (item) => num === item.horns)
+
+  this.setState({
+    d: cal
   })
 }
 
@@ -44,11 +59,13 @@ fatherAppCloseShow = () => {
       <div>
 
         <Header />
+        <Forms sendIt={this.calculateHorns}/>
+        {/* {data} */}
         <Main sendingData={Data} sendFatherApp = {this.fatherApp}/>
-        
+        <SelectedBeast showModel={this.state.show} fatherCloseShow={this.fatherAppCloseShow} sb={this.state.selBeast}/>
         
         <Fotter />
-        <SelectedBeast showModel={this.state.show} fatherCloseShow={this.fatherAppCloseShow} sb={this.state.selBeast}/>
+        
       
       </div>
 
