@@ -18,7 +18,7 @@ class Main extends React.Component {
         this.setState({
             cardClick : this.state.cardClick
         })
-        this.props.pr();
+        this.props.pa();
     }
     
 
@@ -35,6 +35,7 @@ class Main extends React.Component {
             <HornedBeast id ='2' title='"UniWhal' img= 'https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80' description='Parent rhino with two babies' horns= '2' /> */}
 
             <button onClick={this.ClickingB}>cardC: {this.ClickingB}</button>
+            
 
 
             <h3>Total number of Tunas = {this.state.totalNumOfTunas}</h3>
