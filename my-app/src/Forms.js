@@ -15,7 +15,17 @@ class Forms extends React.Component {
   
     this.state = {
       numHorn: '',
+      onchangeSee: ''
     }
+  }
+
+  changeHandeler =(e) => {
+    console.log(e.target.value)
+
+    this.setState({
+      onchangeSee: e.target.value
+    })
+
   }
   
   handleSubmit = (e) => {
@@ -25,7 +35,9 @@ class Forms extends React.Component {
   this.setState({
     numHorn: e.target.numOfHorns.value
     
-  })
+    })
+    
+  
   this.props.sendIt(this.state.numHorn);
     
   }
@@ -33,8 +45,9 @@ class Forms extends React.Component {
   // onChange={this.handleChange}
     render() {
         return(
-            <Form onSubmit={this.handleSubmit}>
-      
+          
+            <Form onSubmit={this.handleSubmit} onChange={this.changeHandeler}>
+      {/* <h3>{this.state.onchangeSee}</h3> */}
         <Form.Group className="mb-3">
           <Form.Label htmlFor="numOfHorns"><h2>Select Numbers Of Horns:</h2></Form.Label>
           <Form.Select id="numOfHorns">
@@ -47,6 +60,7 @@ class Forms extends React.Component {
         </Form.Group>
         
         <Button type="submit" >Submit</Button>
+        
       
     </Form>
 
